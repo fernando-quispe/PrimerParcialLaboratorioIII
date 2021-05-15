@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Primer Parcial - Laboratorio 3</title>
+        <link rel="stylesheet" href="./css/styles.css"></link>
+        <script src="./js/functions.js"></script>      
+    </head>
+
+    <body>
+        <div id="contenedorAgregar" class="contenedor" >
+            <input type="button" value="X" id="btnCerrar" class="cerrar"><br><br>
+
+            <label for="nameM">Nombre</label>
+            <input type="text" id="name" class="sinError" name="name"><br><br>
+           
+            <label for="lcuatrimestre">Cuatrimestre</label> <br> <br>
+            <select name="cuatrimestreName" id="cuatrimestre">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+
+            <label for="fecha">Fecha Final</label>
+            <input type="date" id="fechaFinal" class="sinError" name="fechaName">
+
+            <label for="turno">Turno</label><br>
+            <input type="radio" id="mañana" name="turno" value="mañana">
+            <label for="Tmañana">Mañana</label><br>
+
+            <input type="radio" id="noche" name="turno" value="noche">
+            <label for="Tnoche">Noche</label><br><br><br>
+
+            <input type="button" value="Modificar" id="botonModificar">
+            <input type="button" value="Eliminar" id="botonEliminar">
+
+        </div>
+        <div id="gifSpinner" class="cargando">
+            <img src="./img/spinner.gif" alt="cargando" id="cargando" class="spinner">
+        </div>
+
+        <h2>Listado de Materias</h2>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha Final</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody id="tCuerpo">                
+            </tbody>
+        </table>    
+    </body>
+</html>
